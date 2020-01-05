@@ -1,0 +1,9 @@
+//MainGroup
+Group	Home	"Home"	<house>
+//Rooms
+Group	Study	"Study"	<office>	(Home)
+Group	Test	"Test"	<office>	(Home)
+//Channels
+Switch	Gammes	"Gammes"	<light>	(Study,gGammes)	["Lighting"]	{mqtt=">[mosquitto:/BC:DD:C2:16:A2:93:command:OFF:L10],>[mosquitto:/BC:DD:C2:16:A2:93:command:ON:L11]"}
+Switch	Pacman	"Pacman"	<light>	(Study,gPacman)	["Lighting"]	{mqtt=">[mosquitto:/BC:DD:C2:16:A2:93:command:OFF:L30],>[mosquitto:/BC:DD:C2:16:A2:93:command:ON:L31]"}
+Switch	Hzhzhzhshd	"Hzhzhzhshd"	<light>	(Test,gHzhzhzhshd)	["Lighting"]	{mqtt=">[mosquitto:/BC:DD:C2:16:98:0F:command:OFF:L40],>[mosquitto:/BC:DD:C2:16:98:0F:command:ON:L41]"}

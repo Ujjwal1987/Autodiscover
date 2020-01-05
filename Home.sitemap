@@ -1,0 +1,6 @@
+sitemap Home label ="Home"{
+Frame	{
+Group item=Study
+Group item=Test
+}
+}
